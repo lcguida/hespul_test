@@ -1,0 +1,9 @@
+production_first_meter:
+  site: populated_site
+  production: 5
+  date: 2016-01-08
+
+production_third_meter:
+  site: populated_site
+  production: 5
+  date: 2016-02-02

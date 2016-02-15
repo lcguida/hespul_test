@@ -1,0 +1,20 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Site One
+  latitude: 9.99
+  longitude: 9.99
+  created_at: <%= 1.week.ago %>
+
+two:
+  name: Site Two
+  latitude: 9.99
+  longitude: 9.99
+  created_at: <%= 5.days.ago %>
+
+#Site utilisé pour tester la recherche d'un index à une date specific
+populated_site:
+  name: Populated Site
+  latitude: 22.0
+  longitude: -45.0
+  created_at: 2016-01-01

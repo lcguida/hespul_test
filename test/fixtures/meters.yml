@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  site: one
+  active: true
+  installation_date: <%= 1.week.ago %>
+
+meter_without_readings:
+  site: two
+  active: true
+  installation_date: <%= 5.days.ago %>
+
+### Compteurs pour le site 'populated' ####
+first_meter:
+  site: populated_site
+  active: false
+  installation_date: 2016-01-01
+  #La même date de installation du prochain compteur
+  uninstallation_date: 2016-01-12
+
+second_meter:
+  site: populated_site
+  active: false
+  installation_date: 2016-01-12
+  #La même date de installation du prochain compteur
+  uninstallation_date: 2016-01-30
+
+third_meter:
+  site: populated_site
+  active: true
+  installation_date: 2016-01-30

@@ -1,0 +1,73 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one_first_reading:
+  meter: one
+  value: 10
+  date: <%= 5.days.ago %>
+  source: 0
+
+another_one_reading_in_the_same_date:
+  meter: one
+  value: 20
+  date: <%= 5.days.ago %>
+  source: 0
+
+one_second_reading:
+  meter: one
+  value: 5
+  date: <%= Date.tomorrow %>
+  source: 0
+
+#### index pour les compteurs du site 'populated' ####
+
+# L'idée ici c'est populer plusier index donc c'est possible de tester
+# qui la méthode qui cherche le cumul d'énergie dun site à une date
+# specifique
+
+first_reading_1:
+  meter: first_meter
+  value: 0 #C'était un compteur nouveau
+  date: 2016-01-01
+  source: 0
+
+first_reading_2:
+  meter: first_meter
+  value: 40
+  date: 2016-01-04
+  source: 0
+
+first_reading_3:
+  meter: first_meter
+  value: 70
+  date: 2016-01-10
+  source: 0
+
+second_reading_1:
+  meter: second_meter
+  value: 150 # Compteur d'ocassion. C'est son valeur initial.
+  date: 2016-01-12
+  source: 0
+
+secong_reading_2:
+  meter: second_meter
+  value: 180
+  date: 2016-01-18
+  source: 0
+
+second_reading_3:
+  meter: second_meter
+  value: 250
+  date: 2016-01-25
+  source: 0
+
+third_readind_1:
+  meter: third_meter
+  value: 0
+  date: 2016-01-30
+  source: 0
+
+third_reading_2:
+  meter: third_meter
+  value: 40
+  date: 2016-02-05
+  source: 0
